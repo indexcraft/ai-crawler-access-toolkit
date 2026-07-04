@@ -129,10 +129,3 @@ ai-crawler-access-toolkit/
 ```
 
 ---
-
-## For your resume / portfolio
-
-Suggested bullet:
-> Built an open-source AI Crawler Access Toolkit auditing robots.txt against 24 documented AI crawlers (OpenAI, Anthropic, Perplexity, Google, and more), distinguishing training vs. search/retrieval access; includes an llms.txt validator and generator for the emerging AI-readability standard.
-
-Pairs naturally with the AI Citation Tracker and Structured Data Bulk Auditor — together they cover crawl access, structured data, and citation measurement: the three legs of a GEO audit.

@@ -1,0 +1,25 @@
+name,operator,category,allowed,respects_robots_txt,purpose
+GPTBot,OpenAI,training,True,yes,Crawls public pages to build training data for future models.
+OAI-SearchBot,OpenAI,search_retrieval,True,yes,Builds the index that powers ChatGPT Search citations.
+ChatGPT-User,OpenAI,on_demand,True,yes,Fetches a page live when a user asks ChatGPT about a specific URL.
+ClaudeBot,Anthropic,training,True,yes,Anthropic's primary crawler for foundation model training.
+anthropic-ai,Anthropic,training,True,yes,Secondary training-data user agent observed alongside ClaudeBot.
+Claude-SearchBot,Anthropic,search_retrieval,True,yes,"Search-time retrieval, independently controllable from ClaudeBot training."
+Claude-User,Anthropic,on_demand,True,yes,Fetches a page live when a user references a URL in a Claude conversation.
+PerplexityBot,Perplexity,search_retrieval,True,yes,Periodic indexing that builds Perplexity's citation source pool.
+Perplexity-User,Perplexity,on_demand,True,no,Real-time fetch triggered by a specific user question.
+Googlebot,Google,search_retrieval,True,yes,"Standard Search crawler — also powers AI Overviews via the same index. Blocking removes you from Google Search entirely, not just AI Overviews."
+Google-Extended,Google,opt_out_token,True,yes,Not a crawler — a robots.txt token that opts your content out of Gemini/Vertex AI training. Does not affect Google Search ranking.
+GoogleOther,Google,training,True,yes,Internal Google R&D and product-team crawls outside core Search/Ads.
+Bingbot,Microsoft,search_retrieval,True,yes,Standard Bing crawler — also feeds Copilot's answer sourcing.
+Amazonbot,Amazon,training,True,yes,Crawls for Alexa and Amazon AI product improvement.
+Applebot,Apple,search_retrieval,True,yes,Standard crawler powering Siri and Spotlight results.
+Applebot-Extended,Apple,opt_out_token,True,yes,Robots.txt-only token opting content out of Apple Intelligence training.
+FacebookBot,Meta,training,True,yes,Crawls public content for Meta's AI products.
+meta-externalagent,Meta,training,True,yes,Crawls public content for Meta AI training and indexing.
+Bytespider,ByteDance,training,True,unclear,Crawls for ByteDance/TikTok AI model training.
+CCBot,Common Crawl,training,True,yes,"Builds the open Common Crawl dataset, used to train many LLMs across multiple labs (not just one company)."
+DuckAssistBot,DuckDuckGo,search_retrieval,True,yes,Powers DuckDuckGo's AI-assisted answer features.
+MistralAI-User,Mistral AI,on_demand,True,yes,On-demand fetch triggered by a Le Chat user referencing a URL.
+cohere-ai,Cohere,training,True,yes,Crawls for Cohere model training.
+Diffbot,Diffbot,training,True,unclear,"Structured web-data extraction, used as a data source by several AI products."
